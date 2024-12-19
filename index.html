@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Digital - Tema Pilot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(assets/coverawal\(3\).jpg);"></body> >
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#profil">Profil Pengantin</a></li>
+                <li><a href="#tanggal-lokasi">Tanggal & Lokasi</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tamu-khusus">Tamu Khusus</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#kirim-hadiah">Kirim Hadiah</a></li>
+                <li><a href="#pesan">Pesan untuk Pengantin</a></li>
+                <li><a href="#terima-kasih">Ucapan Terima Kasih</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quotes">
+        <h2>Quotes</h2>
+        <p>"Surat Ar rum Ayat 21"</p>
+        <audio controls>
+            <source src="assets/audio/3430.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="profil"></section>
+        <h2>Profil Pengantin</h2>
+        <img src="assets/image/profilpengantin.jpeg "class="img-circle"width="200px" alt="Pengantin" class="profil-img">
+        <p>Nama: Ryan Tragian</p>
+        <p>Orangtua: Mr kamiel. & Mrs dea. </p>
+        <p>Sosial media: <a href="https://facebook.com/Ryan2746" target="_blank">Facebook</a>, <a href="https://instagram.com/Ryan2746" target="_blank">Instagram</a></p>
+        <p>Nama: Ryan dinda</p>
+        <p>Orangtua: Mr jibran. & Mrs carlette. </p>
+        <p>Sosial media: <a href="https://facebook.com/dinda11_" target="_blank">Facebook</a>, <a href="https://instagram.com/dinda11_" target="_blank">Instagram</a></p>
+
+        <section id="tanggal-lokasi"></section>
+        <h2>Tanggal & Lokasi</h2>
+        <p>Tanggal&waktu Acara:12 oktober 2022&Pukul 9 wib</p>
+        <p>lokasi Acara: <a href="https://www.google.com/maps/dir/-6.2226906,106.9712794/Puri+Suryalaya+Wedding+House,+Jl.+Soekarno+Hatta+No.487,+Cijagra,+Kec.+Lengkong,+Kota+Bandung,+Jawa+Barat+40265/@-6.5905646,106.6281059,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e68e85e33e27241:0xdce793b8f2be67cc!2m2!1d107.6249336!2d-6.9491842?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D target="blank">lokasi</a></p>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="assets/image/download.jpeg" alt="Momen 1" width="300" height="200">
+        <img src="assets/image/momen2.jpeg" alt="Momen 2" width="300" height="200">
+        <video width="350"  controls>
+            <source src="assets/video/videopernikahan.mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="tamu-khusus">
+        <h2>Tamu Khusus</h2>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Undangan</th>
+            </tr>
+            <tr>
+                <td>frenky</td>
+                <td>Hadir</td>
+            </tr>
+            <tr>
+                <td>Profesor kb</td>
+                <td> Hadir</td>
+            </tr>
+            <tr>
+                <td>gibran</td>
+                <td> Hadir</td>
+            </tr>
+            <tr>
+                <td>Rian</td>
+                <td>hadir</td>
+            </tr>
+            <tr>
+                <td>diana</td>
+                <td> Hadir</td>
+            </tr>
+            <tr>
+                <td>rashford</td>
+                <td>Tidak Hadir</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <form action="submit_rsvp.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="phone">Nomor Telepon:</label>
+            <input type="number" id="phone" name="phone"><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            
+            <label>Hadir:</label>
+            <input type="radio" id="hadir" name="attendance" value="Hadir">
+            <label for="hadir">Hadir</label>
+            <input type="radio" id="tidak-hadir" name="attendance" value="Tidak Hadir">
+            <label for="tidak-hadir">Tidak Hadir</label><br>
+            
+            <label>Menu:</label>
+            <input type="checkbox" id="menu1" name="menu" value="Menu 1">
+            <label for="menu1">Menu 1</label>
+            <input type="checkbox" id="menu2" name="menu" value="Menu 2">
+            <label for="menu2">Menu 2</label><br>
+            
+            <label for="guests">Jumlah Tamu:</label>
+            <select id="guests" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+            
+            <label for="message">Pesan atau Komentar:</label>
+            <textarea id="message" name="message"></textarea><br>
+            
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <section id="story">
+        <h2>Story</h2>
+        <p>Cerita tentang perjalanan hubungan pengantin:</p>
+        <p>dinda dan Ryan pertama kali bertemu di sebuah kafe kecil di Bandara. Waktu itu, Dinda sedang membaca buku sambil menikmati secangkir kopi, sementara Ryan tanpa sengaja menjatuhkan kopinya ke buku Dian. Dengan canggung, Ryan meminta maaf dan menawarkan untuk menggantikan buku tersebut. Dari percakapan sederhana itu, mereka mulai mengenal satu sama lain.</p>
+        <P> Seiring waktu, percakapan mereka menjadi lebih dalam dan pribadi. Mereka mulai berbagi cerita tentang mimpi, ketakutan, dan masa lalu masing-masing. Dinda merasa aman bersama Ryan, sementara Ryan merasa bahwa Dinda adalah seseorang yang bisa dia ajak bicara tentang apa saja, tanpa takut dihakimi.
+            Suatu hari, Ryan mengajak Dinda pergi mendaki untuk pertama kalinya. Dinda awalnya ragu karena dia belum pernah mendaki, tapi Ryan meyakinkan bahwa dia akan selalu ada di sampingnya. Pendakian itu menjadi momen penting dalam hubungan mereka. Di atas puncak gunung, ketika matahari terbenam, Ryan menggenggam tangan Dinda dan mengatakan bahwa dia ingin selalu bersama Dinda dalam setiap langkah hidupnya.  </P>
+        <p> Namun, seperti setiap perjalanan, hubungan mereka tidak selalu berjalan mulus. Setelah beberapa bulan, mereka mulai menghadapi tantangan. Pekerjaan Ryan semakin sibuk, dan dia sering terlambat pulang atau harus pergi ke luar kota. Dinda mulai merasa diabaikan, sementara Ryan merasa tertekan karena tanggung jawab pekerjaan yang semakin bes                                                                                   
+            Mereka sering berdebat, kadang-kadang tentang hal-hal kecil yang seharusnya tidak menjadi masalah. Dinda merasa Ryan tidak lagi memberinya waktu seperti dulu, sementara Ryan merasa dinda terlalu menuntut. Pada titik ini, hubungan mereka berada di persimpangan jalan. Mereka harus memutuskan apakah mereka akan bertahan dan memperbaiki hubungan, atau menyerah dan berjalan masing-masing.</p>
+        <P>
+            Beberapa tahun kemudian, hubungan mereka semakin kuat. Mereka telah melalui pasang surut, dan setiap tantangan yang mereka hadapi justru membuat mereka semakin dekat. Mereka belajar bahwa cinta bukan hanya tentang perasaan, tapi juga tentang komitmen, komunikasi, dan kemauan untuk bertumbuh bersama.
+            Pada akhirnya, Ryan melamar Dinda di tempat yang sangat berarti bagi mereka, puncak gunung tempat mereka pertama kali mengungkapkan perasaan mereka. Dengan senyum bahagia, Dinda menerima lamarannya, dan mereka memulai babak baru dalam kehidupan mereka—sebagai pasangan yang dewasa, yang telah melewati banyak hal, namun tetap memilih untuk saling mendukung dan mencintai.
+        </P>
+    
+    
+        </section>
+
+    <section id="kirim-hadiah">
+        <h2>Kirim Hadiah</h2>
+        <img src="assets/image/qrcode.jpeg" width="350" height="350" alt="Rekening Bank">
+        <p>Transfer ke rekening:62-858****7911</p>
+        <img src="images/kado.jpg" alt="Kado">
+        <p>Instruksi untuk kado</p>
+    </section>
+
+    <section id="pesan">
+        <h2>Pesan untuk Pengantin</h2>
+        <form action="submit_message.php" method="post">
+            <label for="message">Pesan & Doa:</label>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Kirim Pesan">
+        </form>
+    </section>
+
+    <section id="terima-kasih">
+        <h2>Ucapan Terima Kasih</h2>
+        <p>Terima kasih atas kehadiran dan doa Anda.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Undangan Digital - Tema Pilot</p>
+    </footer>
+</body>
+</html>
